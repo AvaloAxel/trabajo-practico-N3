@@ -31,7 +31,7 @@ function App() {
 
   const camposVacios = num1 === "" || num2 === "";
   const esDivisionInvalida =
-    operacion === "division" && (parseFloat(num1) === 0 || parseFloat(num2) === 0);
+    operacion === "division" && parseFloat(num2) === 0;
   const botonDeshabilitado = camposVacios || esDivisionInvalida;
 
   return (
